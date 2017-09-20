@@ -367,9 +367,6 @@ public class SearchActivity extends Activity {
     }
 
     protected SuggestionCursor getCurrentSuggestions() {
-        if(mSearchActivityView == null || mSearchActivityView.getSuggestions() == null){
-            return null;
-        }
         return mSearchActivityView.getSuggestions().getResult();
     }
 
